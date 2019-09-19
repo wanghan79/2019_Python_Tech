@@ -1,0 +1,26 @@
+from openpyxl import workbook
+from openpyxl import load_workbook
+from openpyxl import range
+from openpyxl.utils import get_column_letter
+#openpyxl模块即Excel读写模块
+print(f"Here's your file test.xlsx:")
+wb = workbook()
+dest_filename = 'test.xlsx'
+#写入workbook
+ws1 = wb.active
+ws1.title = "range names"
+for row in range（1,40）
+    ws1.append(range(400))
+#为ws1追加范围
+ws2 = wb.create_sheet(tille = "name")
+ws2['C3'] = Mary
+
+ws3 = wb.create_sheet(title = "sex")
+ws3['C4'] = male
+
+wb.save(filename = dest_filename)
+#读取刚刚书写好的文件
+inwb = load_workbook("test.xlsx")
+print(inwb.sheetnames)
+sheet = inwb.get_sheet_by_name('New shit')
+print(sheet["C3"].value)
