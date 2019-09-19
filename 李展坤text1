@@ -22,5 +22,5 @@ wb.save(filename = dest_filename)
 #读取刚刚书写好的文件
 inwb = load_workbook("test.xlsx")
 print(inwb.sheetnames)
-sheet = inwb.get_sheet_by_name('New shit')
+sheet = inwb.get_sheet_by_name('New name')
 print(sheet["C3"].value)
