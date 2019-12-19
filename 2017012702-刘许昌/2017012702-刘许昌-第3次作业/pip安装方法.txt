@@ -1,0 +1,7 @@
+已经安装Python的环境下，
+win+r 搜索打开cmd命令窗口
+输入pip--version 查看系统是否安装pip
+安装pip教程网站   https://www.runoob.com/w3cnote/python-pip-install-usage.html
+安装好pip后，在cmd命令提示符下
+输入pip install xlrd  安装即可调用读取Excel文件，
+输入pip install xlwt  安装即可调用写入Excel文件。
