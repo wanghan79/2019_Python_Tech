@@ -1,7 +1,7 @@
 import xlwings as xw
 xw.App.visible=False
 
-wb=xw.Book(r'D:\PYwyh\excle读取\xinxi.xlsx')   ##确定文件位置
+wb=xw.Book(r'xinxi.xlsx')   ##确定文件
 st=wb.sheets['sheet1']  ##打开指定工作簿
 
 rownum = st.range('A1').current_region.last_cell.row  ##读取行数 整型
