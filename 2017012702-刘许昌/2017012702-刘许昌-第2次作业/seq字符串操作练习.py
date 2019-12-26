@@ -1,6 +1,6 @@
 seq = "today we are luncky!"
 sub = "today"
-sut = "we"
+shu = "we"
 print(seq.capitalize())
 print(seq.count(sub))
 print(seq.endswith(seq,1,5))
