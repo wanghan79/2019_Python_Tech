@@ -26,26 +26,28 @@ stu3 = ['222', 'ssss']
 set2 = {'2016010484', '2016010484', 'ZhangMInzheng', 2000}
 print(set2)
 
-stuset.add('2016010484')                                             #加入重复学号
+stuset.add('2016010484')                                             # 加入重复学号
 print(stuset, '\n')
 
 stub = {'2016010484', 'ZhangMinzheng', '19971018', 22}
-print(stuset.difference(stub))                                       #返回一个集合的差集
-print(stuset.intersection(stub))                                     #两个集合取交集
-print(stuset.union(stub), '\n')                                      #集合取并集
+print(stuset.difference(stub))                                       # 返回一个集合的差集
+print(stuset.intersection(stub))                                     # 两个集合取交集
+print(stuset.union(stub), '\n')                                      # 集合取并集
 
 print('字典操作练习：')
-studict = {'学号': students[0], '姓名': students[1], '电话': students[2], '年龄': students[3]}  #创建字典
+studict = {'学号': students[0], '姓名': students[1], '电话': students[2], '年龄': students[3]}  # 创建字典
 print(studict)
 
-(studict.update({'name': 'Zhang'}))                                  #增加新的字典键值
+(studict.update({'name': 'Zhang'}))                                  # 增加新的字典键值
 print(studict)
 
-studict['ID'] = '370802'                                             #增加新的字典键值
+studict['ID'] = '370802'                                             # 增加新的字典键值
 print(studict)
 
-studict2 = {'学生1': students}                                       #字典里的嵌套
+studict2 = {'学生1': students}                                       # 字典里的嵌套
 print(studict2)
 
+studict.update(studict2)                                             # 加入新的字典
+print(studict)
 
 
